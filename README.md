@@ -1,2 +1,2 @@
 # junior
-Junior dev assigment
+Junior dev assignment
