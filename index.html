@@ -4,33 +4,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap");
+    </style>
     <link rel="stylesheet" href="styles.css" />
     <title>Vance blog</title>
   </head>
   <body>
     <header>
+      <h1>VANCE.</h1>
       <nav>
-        <ul class="navbar">
-          <li>VANCE</li>
-          <li>Resources</li>
-          <li>Inspiration</li>
-          <li>Courses</li>
-          <li>Blog</li>
-          <li>Sign in</li>
-          <li>Get started</li>
+        <ul class="nav__links">
+          <li><a href="#">Resources</a></li>
+          <li class="dropdown">
+            <a href="#">Inspiration</a>
+            <ul class="dropdown__menu">
+              <li><a href="#">Submenu Item 1</a></li>
+              <li><a href="#">Submenu Item 2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Courses</a>
+            <ul class="dropdown__menu">
+              <li><a href="#">Submenu Item 1</a></li>
+              <li><a href="#">Submenu Item 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </nav>
+      <a class="cta" href="#"><button>Sign in</button></a>
+      <a class="cta" href="#"><button>Get Started</button></a>
     </header>
     <main>
-      <section>
-        <hero>
-          <p>Tomas Edwardo</p>
-          <h1>Instagram artists with great photography skills</h1>
-        </hero>
+      <section class="hero">
+        <p class="hero__name">Tomas Edwardo</p>
+        <h2 class="hero__title">
+          Instagram artists with great photography skills
+        </h2>
+        <hr />
+        <p class="hero__counter">1/5</p>
       </section>
 
       <section>
-        <blog class="blog">
+        <div class="blog">
           <div class="blog__text">
             <h2>Choose what you’d like to learn from hundreds of topics:</h2>
             <ul>
@@ -41,91 +58,117 @@
               <li>Relationships</li>
               <li>Self-Care & Mindfulness</li>
             </ul>
-          </div>
-          <div class="blog__search">
-            <img src="" alt="search icon" />
-            <p>Search Topic</p>
+            <div class="blog__search">
+              <img src="" alt="search icon" />
+              <p>Search Topic</p>
+            </div>
           </div>
           <div class="blog__cards">
             <ul>
               <li class="card">
-                <img class="card__img" src="" alt="" />
+                <img class="card__img" src="/images/card_1.svg" alt="" />
                 <div class="card__content">
-                    <p>29.Jun.2021</p>
-                    <h3>Richard Norton photorealistic rendering as real photos</h3>
-                    <p>Many years ago, I worked for my parents who own a video production company.</p>
-                    <hr>
-                    <p>By: Peter Rowardson</p>
-                    <img src="" alt="hearth icon">
-                    <p>175</p>
+                  <p>29.Jun.2021</p>
+                  <h3>
+                    Richard Norton photorealistic rendering as real photos
+                  </h3>
+                  <p>
+                    Many years ago, I worked for my parents who own a video
+                    production company.
+                  </p>
+                  <hr />
+                  <p>By: Peter Rowardson</p>
+                  <img src="" alt="hearth icon" />
+                  <p>175</p>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="" alt="" />
+                <img class="card__img" src="/images/card_2.svg" alt="" />
                 <div class="card__content">
-                    <p>29.Jun.2021</p>
-                    <h3>Richard Norton photorealistic rendering as real photos</h3>
-                    <p>Many years ago, I worked for my parents who own a video production company.</p>
-                    <hr>
-                    <p>By: Peter Rowardson</p>
-                    <img src="" alt="hearth icon">
-                    <p>175</p>
+                  <p>29.Jun.2021</p>
+                  <h3>
+                    Richard Norton photorealistic rendering as real photos
+                  </h3>
+                  <p>
+                    Many years ago, I worked for my parents who own a video
+                    production company.
+                  </p>
+                  <hr />
+                  <p>By: Peter Rowardson</p>
+                  <img src="" alt="hearth icon" />
+                  <p>175</p>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="" alt="" />
+                <img class="card__img" src="/images/card_3.svg" alt="" />
                 <div class="card__content">
-                    <p>29.Jun.2021</p>
-                    <h3>Richard Norton photorealistic rendering as real photos</h3>
-                    <p>Many years ago, I worked for my parents who own a video production company.</p>
-                    <hr>
-                    <p>By: Peter Rowardson</p>
-                    <img src="" alt="hearth icon">
-                    <p>175</p>
+                  <p>29.Jun.2021</p>
+                  <h3>
+                    Richard Norton photorealistic rendering as real photos
+                  </h3>
+                  <p>
+                    Many years ago, I worked for my parents who own a video
+                    production company.
+                  </p>
+                  <hr />
+                  <p>By: Peter Rowardson</p>
+                  <img src="" alt="hearth icon" />
+                  <p>175</p>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="" alt="" />
+                <img class="card__img" src="/images/card_4.svg" alt="" />
                 <div class="card__content">
-                    <p>29.Jun.2021</p>
-                    <h3>Richard Norton photorealistic rendering as real photos</h3>
-                    <p>Many years ago, I worked for my parents who own a video production company.</p>
-                    <hr>
-                    <p>By: Peter Rowardson</p>
-                    <img src="" alt="hearth icon">
-                    <p>175</p>
+                  <p>29.Jun.2021</p>
+                  <h3>
+                    Richard Norton photorealistic rendering as real photos
+                  </h3>
+                  <p>
+                    Many years ago, I worked for my parents who own a video
+                    production company.
+                  </p>
+                  <hr />
+                  <p>By: Peter Rowardson</p>
+                  <img src="" alt="hearth icon" />
+                  <p>175</p>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="" alt="" />
+                <img class="card__img" src="/images/card_5.svg" alt="" />
                 <div class="card__content">
-                    <p>29.Jun.2021</p>
-                    <h3>Richard Norton photorealistic rendering as real photos</h3>
-                    <p>Many years ago, I worked for my parents who own a video production company.</p>
-                    <hr>
-                    <p>By: Peter Rowardson</p>
-                    <img src="" alt="hearth icon">
-                    <p>175</p>
+                  <p>29.Jun.2021</p>
+                  <h3>
+                    Richard Norton photorealistic rendering as real photos
+                  </h3>
+                  <p>
+                    Many years ago, I worked for my parents who own a video
+                    production company.
+                  </p>
+                  <hr />
+                  <p>By: Peter Rowardson</p>
+                  <img src="" alt="hearth icon" />
+                  <p>175</p>
                 </div>
               </li>
             </ul>
           </div>
-        </blog>
+        </div>
       </section>
     </main>
+
     <footer>
       <div class="top">
-        <ul>
-          <li>Vance Studio</li>
+        <h3 class="footer__logo">VENCE Studio.</h3>
+        <ul class="footer__list">  
           <li>About us</li>
           <li>Archive</li>
           <li>Contact us</li>
         </ul>
-        <ul class="social">
+        <ul class="footer__social">
           <li>Fb</li>
           <li>Tw</li>
           <li>Ln</li>
