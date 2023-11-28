@@ -17,14 +17,16 @@
         <ul class="nav__links">
           <li><a href="#">Resources</a></li>
           <li class="dropdown">
-            <a href="#">Inspiration</a>
+            <a href="#"
+              >Inspiration <img src="/images/arrow.png" alt="Arrow"
+            /></a>
             <ul class="dropdown__menu">
               <li><a href="#">Submenu Item 1</a></li>
               <li><a href="#">Submenu Item 2</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Courses</a>
+            <a href="#">Courses <img src="/images/arrow.png" alt="Arrow" /></a>
             <ul class="dropdown__menu">
               <li><a href="#">Submenu Item 1</a></li>
               <li><a href="#">Submenu Item 2</a></li>
@@ -33,8 +35,10 @@
           <li><a href="#">Blog</a></li>
         </ul>
       </nav>
-      <a class="cta" href="#"><button>Sign in</button></a>
-      <a class="cta" href="#"><button>Get Started</button></a>
+      <div class="cta">
+        <a class="cta__login" href="#">Sign in</a>
+        <a class="cta__start" href="#">Get Started</a>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -42,8 +46,10 @@
         <h2 class="hero__title">
           Instagram artists with great photography skills
         </h2>
-        <hr />
-        <p class="hero__counter">1/5</p>
+        <div class="hero__counter">
+          <hr />
+          <p>1/5</p>
+        </div>
       </section>
 
       <section>
@@ -59,14 +65,14 @@
               <li>Self-Care & Mindfulness</li>
             </ul>
             <div class="blog__search">
-              <img src="" alt="search icon" />
+              <img src="/images/search_icon.jpg" alt="search icon" />
               <p>Search Topic</p>
             </div>
           </div>
           <div class="blog__cards">
             <ul>
               <li class="card">
-                <img class="card__img" src="/images/card_1.svg" alt="" />
+                <img class="card__img" src="/images/card_1.png" alt="" />
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -77,14 +83,16 @@
                     production company.
                   </p>
                   <hr />
-                  <p>By: Peter Rowardson</p>
-                  <img src="" alt="hearth icon" />
-                  <p>175</p>
+                  <div class="card__info">
+                    <p>By: Peter Rowardson</p>
+                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <p>175</p>
+                  </div>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="/images/card_2.svg" alt="" />
+                <img class="card__img" src="/images/card_2.png" alt="" />
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -95,14 +103,35 @@
                     production company.
                   </p>
                   <hr />
-                  <p>By: Peter Rowardson</p>
-                  <img src="" alt="hearth icon" />
-                  <p>175</p>
+                  <div class="card__info">
+                    <p>By: Peter Rowardson</p>
+                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <p>175</p>
+                  </div>
+              </li>
+
+              <li class="card">
+                <img class="card__img" src="/images/card_3.png" alt="" />
+                <div class="card__content">
+                  <p>29.Jun.2021</p>
+                  <h3>
+                    Richard Norton photorealistic rendering as real photos
+                  </h3>
+                  <p>
+                    Many years ago, I worked for my parents who own a video
+                    production company.
+                  </p>
+                  <hr />
+                  <div class="card__info">
+                    <p>By: Peter Rowardson</p>
+                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <p>175</p>
+                  </div>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="/images/card_3.svg" alt="" />
+                <img class="card__img" src="/images/card_4.png" alt="" />
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -113,14 +142,15 @@
                     production company.
                   </p>
                   <hr />
-                  <p>By: Peter Rowardson</p>
-                  <img src="" alt="hearth icon" />
-                  <p>175</p>
-                </div>
+                  <div class="card__info">
+                    <p>By: Peter Rowardson</p>
+                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <p>175</p>
+                  </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="/images/card_4.svg" alt="" />
+                <img class="card__img" src="/images/card_5.png" alt="" />
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -131,27 +161,11 @@
                     production company.
                   </p>
                   <hr />
-                  <p>By: Peter Rowardson</p>
-                  <img src="" alt="hearth icon" />
-                  <p>175</p>
-                </div>
-              </li>
-
-              <li class="card">
-                <img class="card__img" src="/images/card_5.svg" alt="" />
-                <div class="card__content">
-                  <p>29.Jun.2021</p>
-                  <h3>
-                    Richard Norton photorealistic rendering as real photos
-                  </h3>
-                  <p>
-                    Many years ago, I worked for my parents who own a video
-                    production company.
-                  </p>
-                  <hr />
-                  <p>By: Peter Rowardson</p>
-                  <img src="" alt="hearth icon" />
-                  <p>175</p>
+                  <div class="card__info">
+                    <p>By: Peter Rowardson</p>
+                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <p>175</p>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -163,7 +177,7 @@
     <footer>
       <div class="top">
         <h3 class="footer__logo">VENCE Studio.</h3>
-        <ul class="footer__list">  
+        <ul class="footer__list">
           <li>About us</li>
           <li>Archive</li>
           <li>Contact us</li>

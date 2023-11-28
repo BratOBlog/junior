@@ -2,7 +2,7 @@
   "name": "junior",
   "version": "1.0.0",
   "description": "Junior dev assignment",
-  "main": "index.html",
+  "index": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "parcel-bundler": "^1.12.5"
+  "devDependencies": {
+    "parcel": "^2.10.3"
   }
 }
