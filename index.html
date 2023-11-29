@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore articles on Instagram artists with great photography skills." />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap");
     </style>
@@ -11,25 +12,32 @@
     <title>Vance blog</title>
   </head>
   <body>
-    <header>
-      <h1>VANCE.</h1>
-      <nav>
+    <header role="banner">
+      <h1>VANCE<span style="color: #DDBEA9;">.</span></h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <ul class="nav__links">
           <li><a href="#">Resources</a></li>
-          <li class="dropdown">
+          <li class="dropdown" aria-haspopup="true">
             <a href="#"
-              >Inspiration <img src="/images/arrow.png" alt="Arrow"
+              >Inspiration <img class="dropdown__arrow" src="/images/arrow.png" alt="Dropdown Arrow"
             /></a>
             <ul class="dropdown__menu">
-              <li><a href="#">Submenu Item 1</a></li>
-              <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Digital Products</a></li>
+              <li><a href="#">New Trend</a></li>
+              <li><a href="#">Graphic Arts</a></li>
+              <li><a href="#">Web Design</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="#">Courses <img src="/images/arrow.png" alt="Arrow" /></a>
+          <li class="dropdown" aria-haspopup="true">
+            <a href="#">Courses <img class="dropdown__arrow" src="/images/arrow.png" alt="Dropdown Arrow" /></a>
             <ul class="dropdown__menu">
-              <li><a href="#">Submenu Item 1</a></li>
-              <li><a href="#">Submenu Item 2</a></li>
+              <li><a href="#">Personal development</a></li>
+              <li><a href="#">Self-Care and Mindfulness</a></li>
             </ul>
           </li>
           <li><a href="#">Blog</a></li>
@@ -72,7 +80,7 @@
           <div class="blog__cards">
             <ul>
               <li class="card">
-                <img class="card__img" src="/images/card_1.png" alt="" />
+                <img class="card__img" src="/images/card_1.png" alt="Zombie with mask" loading="lazy"/>
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -85,14 +93,14 @@
                   <hr />
                   <div class="card__info">
                     <p>By: Peter Rowardson</p>
-                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <img src="/images/heart_icon.png" alt="Heart icon for like" />
                     <p>175</p>
                   </div>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="/images/card_2.png" alt="" />
+                <img class="card__img" src="/images/card_2.png" alt="Image of a sad faced egg" loading="lazy" />
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -105,13 +113,13 @@
                   <hr />
                   <div class="card__info">
                     <p>By: Peter Rowardson</p>
-                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <img src="/images/heart_icon.png" alt="Heart icon for liking the post" />
                     <p>175</p>
                   </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="/images/card_3.png" alt="" />
+                <img class="card__img" src="/images/card_3.png" alt="Image of a digital oasys artwork" loading="lazy" />
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -124,14 +132,14 @@
                   <hr />
                   <div class="card__info">
                     <p>By: Peter Rowardson</p>
-                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <img src="/images/heart_icon.png" alt="Heart icon for liking the post" />
                     <p>175</p>
                   </div>
                 </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="/images/card_4.png" alt="" />
+                <img class="card__img" src="/images/card_4.png" alt="Image of a small and cute creature peeing out a hole in the ground" loading="lazy" />
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -144,13 +152,13 @@
                   <hr />
                   <div class="card__info">
                     <p>By: Peter Rowardson</p>
-                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <img src="/images/heart_icon.png" alt="Heart icon for liking the post" />
                     <p>175</p>
                   </div>
               </li>
 
               <li class="card">
-                <img class="card__img" src="/images/card_5.png" alt="" />
+                <img class="card__img" src="/images/card_5.png" alt="Image of an anime girls holding her cap and blinking" loading="lazy"/>
                 <div class="card__content">
                   <p>29.Jun.2021</p>
                   <h3>
@@ -163,7 +171,7 @@
                   <hr />
                   <div class="card__info">
                     <p>By: Peter Rowardson</p>
-                    <img src="/images/heart_icon.png" alt="hearth icon" />
+                    <img src="/images/heart_icon.png" alt="Heart icon for liking the post" />
                     <p>175</p>
                   </div>
                 </div>
@@ -175,8 +183,8 @@
     </main>
 
     <footer>
-      <div class="top">
-        <h3 class="footer__logo">VENCE Studio.</h3>
+      <div class="footer__top">
+        <h3 class="footer__brand">VENCE Studio<span style="color: #DDBEA9;">.</span></h3>
         <ul class="footer__list">
           <li>About us</li>
           <li>Archive</li>
@@ -189,11 +197,12 @@
         </ul>
       </div>
       <hr />
-      <div class="bottom">
+      <div class="footer__bottom">
         <p>1088, North Street, Alexandria, AU</p>
         <p>© 2022, All Rights Reserved</p>
       </div>
     </footer>
-  </body>
   <script src="script.js"></script>
+  </body>
+
 </html>
