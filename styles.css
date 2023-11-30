@@ -37,17 +37,13 @@ header a:hover {
     margin-right: 1.5rem;
 }
 
-.dropdown {
-    margin-right: 2.4rem;
-}
-
 .dropdown a {
     display: block;
 }
 
 .dropdown .dropdown__menu {
     display: none;
-    position: absolute;
+    position: fixed;
     border-radius: 0.3rem;
     font-size: 0.75rem;
     font-style: normal;
@@ -86,7 +82,6 @@ header .dropdown__menu a:hover {
 
 .cta {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -108,30 +103,44 @@ header .dropdown__menu a:hover {
     color: #F8F9FA;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
     font-style: normal;
 }
 
+
 .hero__name {
     font-weight: 300;
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     color: #E5E5E5;
     line-height: 1.25rem;
+    margin-top: auto;
     margin-bottom: 0.9rem;
 }
 
 .hero__title {
     font-weight: 700;
-    font-size: 1.5625rem;
+    font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 9rem;
 }
 
-.hero__counter hr {
+.hero__counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.hero .hero__counter p {
+    color: #E5E5E5;
+
+}
+
+.hero .hero__counter hr {
     width: 2.751rem;
     height: 0.03rem;
-    justify-self: center;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
 }
 
 .blog {
@@ -240,12 +249,38 @@ p {
     margin: 0;
 }
 
+.card__counter {
+    padding-top: 2rem;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.card__counter ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.card__counter li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-right: 0.5rem;
+
+}
+
+.card__counter li:last-child {
+    margin-right: 0;
+}
+
 footer {
     background: #212529;
     color: rgba(248, 249, 250, 0.50);
     padding: 1.25rem;
     list-style: none;
     margin-top: 6.75rem;
+    padding-top: 6rem;
 }
 
 .top {
@@ -344,7 +379,7 @@ footer hr {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .nav__links li,
     .cta__start,
     .dropdown,
@@ -353,22 +388,45 @@ footer hr {
         margin-left: 0.6rem;
     }
 
-    header .dropdown__menu {
-        font-size: 0.9rem;
+    .dropdown .dropdown__menu {
+        position: static;
+        /* Change fixed to static for small screens */
+        margin-top: 0.6rem;
+        /* Adjust the margin to fit your design */
     }
 
-    header .dropdown__menu a {
+    .dropdown:hover .dropdown__menu {
+        display: flex;
+        flex-direction: column;
+        background: #212529;
+        transition: opacity 1s ease, visibility 1s ease;
+        visibility: visible;
+        position: static;
+    }
+
+    .dropdown__menu a {
         padding: 0.5rem;
+        width: 100%;
     }
 
-    .cta__start {
-        margin-left: 0;
+
+
+    .cta {
+        margin-left: 1rem;
+    }
+
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
     }
 
     .hero__title {
         font-size: 1.125rem;
         line-height: 1.75rem;
-        margin-bottom: 2.5rem;
+
     }
 
     .hero__counter hr {
