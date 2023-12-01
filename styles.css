@@ -270,6 +270,7 @@ p {
 .card__counter li:first-child {
     color: #495057;
 }
+
 .card__counter li:last-child {
 
     margin-right: 0;
@@ -400,9 +401,8 @@ footer hr {
 
     .dropdown .dropdown__menu {
         position: static;
-        /* Change fixed to static for small screens */
         margin-top: 0.6rem;
-        /* Adjust the margin to fit your design */
+
     }
 
     .dropdown:hover .dropdown__menu {
@@ -419,12 +419,9 @@ footer hr {
         width: 100%;
     }
 
-
-
     .cta {
         margin-left: 1rem;
     }
-
 
     .hero {
         display: flex;
@@ -465,8 +462,13 @@ footer hr {
         margin-right: 0.3rem;
     }
 
+    .card__counter{
+        margin-top: 2%;
+    }
+
     footer {
-        margin-top: 1.25rem;
+        margin-top: 8rem;
+        height: 80vh;
     }
 
     .top,
