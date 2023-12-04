@@ -13,9 +13,16 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 2.4rem;
+}
+
+header,
+.card__info,
+.footer__top,
+.footer__bottom,
+.toggle-button {
+    justify-content: space-between;
 }
 
 header .nav__links,
@@ -29,7 +36,9 @@ header a {
     color: rgba(73, 80, 87, 0.50);
 }
 
-header a:hover {
+header a:hover,
+.card__counter li:first-child,
+.blog__text li::before {
     color: #495057;
 }
 
@@ -38,7 +47,9 @@ header a:hover {
     margin-right: 1.5rem;
 }
 
-.dropdown a {
+.dropdown a,
+.dropdown__menu a,
+.dropdown:hover .dropdown__menu a {
     display: block;
 }
 
@@ -65,8 +76,6 @@ header .dropdown__menu a:hover {
 }
 
 .dropdown__menu a {
-    color: rgba(248, 249, 250, 0.60);
-    display: block;
     padding: 0.6rem;
     width: 100%;
     box-sizing: border-box;
@@ -77,20 +86,21 @@ header .dropdown__menu a:hover {
     width: 0.5rem;
 }
 
-.dropdown:hover .dropdown__menu a {
-    display: block;
-}
-
 .cta {
     display: flex;
     align-items: center;
+}
+
+.hero,
+.cta__start,
+.footer__brand {
+    color: #F8F9FA;
 }
 
 .cta__start {
     border-radius: 1.25rem;
     background: #DDBEA9;
     padding: 0.5rem 1rem;
-    color: #F8F9FA;
     margin-left: 1.5rem;
 }
 
@@ -101,18 +111,15 @@ header .dropdown__menu a:hover {
         lightgray 50%;
     min-height: 31.25rem;
     width: auto;
-    color: #F8F9FA;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-style: normal;
 }
 
-
 .hero__name {
     font-weight: 300;
     font-size: 1.5rem;
-    color: #E5E5E5;
     line-height: 1.25rem;
     margin-top: auto;
     margin-bottom: 0.9rem;
@@ -129,12 +136,11 @@ header .dropdown__menu a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.5rem;
 }
 
-.hero .hero__counter p {
+.hero .hero__counter p,
+.hero__name {
     color: #E5E5E5;
-
 }
 
 .hero .hero__counter hr {
@@ -178,7 +184,6 @@ header .dropdown__menu a:hover {
 
 .blog__text li::before {
     content: "+";
-    color: #495057;
     padding-right: 0.6rem;
 }
 
@@ -200,16 +205,22 @@ header .dropdown__menu a:hover {
     order: 2;
 }
 
-.blog__cards li {
-    margin-bottom: 2.5rem;
-}
-
 .card {
     display: flex;
     row-gap: 2.5rem;
     column-gap: 1.9rem;
+    transition: 0.3s ease-in-out;
 }
 
+.card:hover {
+    background: lightgray 50% / cover no-repeat, #C4C4C4;
+    transform: scale(1.25);
+    border-radius: 0.8rem;
+}
+
+.card:hover .card__content h3{
+    color: #CCD5AE;
+}
 .card__content>h3,
 p {
     padding-bottom: 0.9rem;
@@ -222,6 +233,7 @@ p {
 
 .card hr {
     background: #E5E5E5;
+
 }
 
 .card__img {
@@ -231,7 +243,6 @@ p {
 
 .card__info {
     display: flex;
-    justify-content: space-between;
 }
 
 .card__info img {
@@ -244,10 +255,6 @@ p {
 .card__info p:first-child {
     flex-grow: 1;
     margin-right: 0.6rem;
-}
-
-.card__info p {
-    margin: 0;
 }
 
 .card__counter {
@@ -267,12 +274,7 @@ p {
     color: rgba(73, 80, 87, 0.50);
 }
 
-.card__counter li:first-child {
-    color: #495057;
-}
-
 .card__counter li:last-child {
-
     margin-right: 0;
 }
 
@@ -284,7 +286,6 @@ footer {
     margin-top: 8rem;
     padding: 6rem 8rem;
     height: 325px;
-
 }
 
 .top {
@@ -296,29 +297,18 @@ footer {
 .footer__top,
 .footer__bottom {
     display: flex;
-    justify-content: space-between;
 }
 
-.footer__list li a {
+.footer__list li a,
+.footer__social li a,
+.dropdown__menu a {
     text-decoration: none;
     color: rgba(248, 249, 250, 0.60);
-}
-
-
-footer ul {
-    margin: 0;
-    padding: 0;
-
 }
 
 footer ul li {
     display: inline-block;
     margin-right: 1.25rem;
-
-}
-
-.footer__brand {
-    color: #F8F9FA;
 }
 
 .footer__social {
@@ -346,7 +336,6 @@ footer hr {
     top: 1.25rem;
     right: 1rem;
     flex-direction: column;
-    justify-content: space-between;
     width: 1.9rem;
     height: 1.3rem;
 }
@@ -401,8 +390,6 @@ footer hr {
 
     .dropdown .dropdown__menu {
         position: static;
-        margin-top: 0.6rem;
-
     }
 
     .dropdown:hover .dropdown__menu {
@@ -423,11 +410,16 @@ footer hr {
         margin-left: 1rem;
     }
 
+    .hero,
+    .hero__counter,
+    .blog__cards li {
+        margin-bottom: 2.5rem;
+    }
+
     .hero {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2.5rem;
     }
 
     .hero__title {
@@ -462,7 +454,7 @@ footer hr {
         margin-right: 0.3rem;
     }
 
-    .card__counter{
+    .card__counter {
         margin-top: 2%;
     }
 
